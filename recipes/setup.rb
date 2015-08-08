@@ -26,7 +26,7 @@ when 'rhel', 'fedora'
     pkgs = %w(perl-FCGI perl-FCGI-ProcManager spawn-fcgi)
   end
 else
-  pkgs = %w(libfcgi-perl libfcgi-procmanager-perl spawn-fcgi)
+  pkgs = %w(spawn-fcgi fcgiwrap)
 end
 
 if platform_family?('rhel')

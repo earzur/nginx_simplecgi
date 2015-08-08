@@ -14,4 +14,4 @@ pre-start script
   chown <%= @nginx_user %>:<%= @nginx_group %> <%= @dispatch_dir %>
 end script
 
-exec sudo -u <%= @nginx_user %> /usr/local/bin/cgiwrap_dispatcher
+exec /usr/local/bin/cgiwrap_dispatcher
